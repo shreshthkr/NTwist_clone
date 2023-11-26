@@ -55,7 +55,8 @@ const FOOTER= styled.div`
     }
     .footer-menu{
        width:100% ;
-       height: 38px;
+      min-height: 38px;
+      max-height: auto;
        display: flex;
        align-items: center;
        justify-content: center;
@@ -103,5 +104,17 @@ const FOOTER= styled.div`
         color: #6F7F92;
         font-size: 16px;
         font-family: Roboto, sans-serif;
+    }
+    @media all and (min-width: 100px) and (max-width: 410px){
+        
+        margin-top: 30px;
+
+        .footer-menu{
+            width: 95%;
+            
+        }
+        .footer-menu ul>li{
+            font-size: 14px;
+        }
     }
 `
