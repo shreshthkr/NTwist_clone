@@ -1,9 +1,11 @@
 # NTwist
 
-# Link: https://ntwist-indol.vercel.app/
+# Links: 
+# NTWIST: https://ntwist-indol.vercel.app/
+# GitHub: https://github-clone-brown.vercel.app/
 
  
- It is a clone of NTWIST HomePage.
+ It is a clone of NTWIST HomePage and GitHub HomePage.
 
 # Tech Stack: 
   1. React
