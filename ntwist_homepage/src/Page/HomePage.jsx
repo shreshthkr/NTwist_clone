@@ -223,7 +223,7 @@ const BODY = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
    
 }
 .sub-heading{
