@@ -72,7 +72,7 @@ window.addEventListener('scroll', changeBackground)
           </ul>
         </div>
              <div className="menu-left">
-             <CgMenuLeft color="red" fontSize={"25px"} fontWeight={"600"} onClick={onOpen} ref={btnRef} />
+             <CgMenuLeft color={"rgb(0,51,88)"} fontSize={"25px"} fontWeight={"600"} onClick={onOpen} ref={btnRef} />
              <Drawer
         isOpen={isOpen}
         placement='right'
@@ -86,6 +86,9 @@ window.addEventListener('scroll', changeBackground)
           <DrawerHeader></DrawerHeader>
 
           <DrawerBody>
+            <div className="second-listt">
+
+            
            <ul>
             <li>Home</li>
             <li>
@@ -112,6 +115,7 @@ window.addEventListener('scroll', changeBackground)
             <li>Blog</li>
             <li>Contact Us</li>
            </ul>
+           </div>
           </DrawerBody>
 
         </DrawerContent>
@@ -238,7 +242,12 @@ top: 0;
     display: none;
 }
 
-@media all and (min-width: 450px) and (max-width: 800px){
+    .second-listt>ul>li{
+       list-style: none;
+       color: rgb(0,51,88);
+    }
+
+@media all and (min-width: 410px) and (max-width: 800px){
     .navbar{
         width:98%;
         border: 1px solid #ffff;
@@ -261,18 +270,36 @@ top: 0;
 
 @media all and (min-width: 100px) and (max-width: 410px){
     .navbar{
-        width:100%;
-        border: 1px solid #ffff;
-        background-color: #ffff;
-        justify-content:space-around;
+        width:90%;
+        background: transparent;
+        justify-content:space-between;
     }
+    .navbar.active{
+    width: 100%;
+    background-color: #ffff;
+    justify-content:space-around;
+    z-index: 1000;
+ }
+ .logo{
+   width: 30%;
+   height: 100%;
+   display:flex;
+   align-items:center;
+}
+.logo>img{
+   object-fit: contain;
+}
     .menu-list{
+        display: none;
+    }
+    .menu-list.menu-active{
         display: none;
     }
     .menu-left{
         display: block;
 
     }
+ 
 }
 
 

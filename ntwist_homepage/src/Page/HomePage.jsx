@@ -181,10 +181,10 @@ const HOME = styled.div`
     justify-content: space-around;
         align-items: flex-start;
         justify-content: space-evenly;
-        border: 1px solid #ffff;
     }
     .left-section{
         width:80%;
+        margin-left: 30px;
     }
     .heading > h1 {
         font-size: 25px;
@@ -196,6 +196,7 @@ const HOME = styled.div`
     .right-section{
         width: 80%;
         height: 200px;
+        margin-left: 30px;
     }
 }
 
